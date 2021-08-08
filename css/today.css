@@ -1,0 +1,47 @@
+#weather {
+  font-size: 20px;
+  color: white;
+  opacity: 80%;
+  margin: -30px;
+  width: 600px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#weather span {
+  margin-right: 5px;
+}
+
+#time {
+  display: flex;
+  font-size: 80px;
+  color: white;
+}
+
+#time > h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+#clock {
+  margin-right: 15px;
+}
+
+#quote {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  width: 580px;
+  margin-top: -20px;
+  opacity: 75%;
+}
+
+#quote span:first-child {
+  font-size: 30px;
+}
+
+#quote span:last-child {
+  font-size: 20px;
+}

@@ -1,0 +1,82 @@
+h1 {
+  color: white;
+  transition: color 0.5s ease-in-out;
+  font-size: 40px;
+  margin: 0 0 15px 0;
+}
+
+h1:hover {
+  animation: colorAnimation 0.8s ease-in-out;
+}
+
+@keyframes colorAnimation {
+  0% {
+    opacity: 0.8;
+    color: #9198e5;
+  }
+  50% {
+    opacity: 1;
+    color: #e66465;
+  }
+  100% {
+    opacity: 0.8;
+    color: #9198e5;
+  }
+}
+
+#todo-form > input {
+  width: 600px;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  opacity: 46%;
+  text-align: center;
+}
+
+#todo-form > input:focus {
+  outline: none;
+  opacity: 80%;
+  border-color: rgb(255, 109, 109);
+}
+
+#todo-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  color: white;
+  background-color: rgb(102, 102, 102, 60%);
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+#todo-list li {
+  position: relative;
+  margin-top: 10px;
+}
+
+.checkBtn,
+.delBtn {
+  cursor: pointer;
+  margin-left: 10px;
+  background: none;
+  border: none;
+}
+
+.delBtn {
+  position: absolute;
+  right: 0;
+}
+
+.strikeOut {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  text-decoration-thickness: 3px;
+}
+
+#progress {
+  margin-bottom: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
